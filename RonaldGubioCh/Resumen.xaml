@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RonaldGubioCh.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" Text="gg" FontSize="15" HorizontalTextAlignment="End" />
+            
+            <Label Text="RESUMEN DE PAGO "    HorizontalOptions="CenterAndExpand"  FontSize="25"/>
+            <Label x:Name="lbllabel" Text="" FontSize="15" HorizontalTextAlignment="End" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre de estudiante" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtEstudiante" Placeholder="" Grid.Row="0" Grid.Column="1"/>
+                
+                 <Label Text="Total a pagar" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtTotal" Placeholder="" Grid.Row="1" Grid.Column="1"/>
+
+
+
+
+            </Grid>
+            
+            
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

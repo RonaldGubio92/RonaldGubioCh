@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RonaldGubioCh.Registro">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <Label x:Name="lblUsuario" Text="gg" FontSize="15" HorizontalTextAlignment="End" />
+            <Label Text="REGISTRO DE PAGO "    HorizontalOptions="CenterAndExpand"  FontSize="25"/>
+            <Label x:Name="lbllabel" Text="" FontSize="15" HorizontalTextAlignment="End" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                    <Label Text="Estudiante"  FontSize="18" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtEstudiante" Placeholder="" 
+                       Grid.Row="0" Grid.Column="1"/>
+
+                    <Label Text="Monto Inicial"  FontSize="18" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtMonto" Placeholder="" TextChanged="txtMonto_TextChanged" 
+                       Keyboard="Numeric"
+                       Grid.Row="1" Grid.Column="1"/>
+
+
+                <Label Text="Pago Mensual"  FontSize="18"  Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtPagoM" Placeholder=""  Grid.Row="2" Grid.Column="1" IsReadOnly="True"/>
+
+                <Button x:Name="btnCalcular"
+                VerticalOptions="Center"
+                    FontAttributes="None"
+                    Text="Calcular"
+                    TextColor="Black"
+                    BackgroundColor="Transparent"
+                    BorderColor="#1A5276"
+                    BorderWidth="1.5"
+                    CornerRadius="5"
+                    Clicked="btnCalcular_Clicked"
+                         Grid.Row="3" Grid.Column="0"
+                    />
+
+
+            <Button x:Name="btnResumen"
+                VerticalOptions="Center"
+                    FontAttributes="None"
+                    Text="Resumen"
+                    TextColor="Black"
+                    BackgroundColor="Transparent"
+                    BorderColor="#1A5276"
+                    BorderWidth="1.5"
+                    CornerRadius="5"  
+                    Clicked="btnResumen_Clicked"
+                    Grid.Row="3" Grid.Column="1"/>
+
+            </Grid>
+
+
+
+
+
+
+
+        </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
